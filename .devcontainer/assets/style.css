@@ -1,8 +1,13 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+
 /* adding general styles first */
 * { 
     padding:0;
     margin:0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -14,23 +19,76 @@ header {
     flex-direction: row;
     width:100%;
 }
+/* apex logo invisible small screen sizes */
+#apex-logo {visibility: hidden;
+width:0;
+height:0;}
+/* styling  the drop down  */
+/* Hide the dropdown menu by default */
+.dropdown-menu {
+    display: none;
+}
+
+/* Style the dropdown menu */
+.dropdown-menu li {
+    padding: 10px;
+    background-color: #f2f2f2;
+}
+
+/* Style for the active item */
+.active {
+    font-weight: bold;
+}
+
+/* Style for the dropdown toggle */
+.dropdown-toggle:hover + .dropdown-menu {
+    display: block;
+}
+
+/* Style for the dropdown toggle link */
+.dropdown-toggle {
+    cursor: pointer;
+}
+
+/* Style for the dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
 /*adding margin to the top of the page so that header displays clearly */
 main {padding-top:80px ;}
 
-header > a {width: 60%;}
+
 
 /* styling the header section */
+
+main-headings-header {
+    height:100%;
+    display:flex;
+    position:center;
+    width:80%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
 h1,h2 {margin-left: 5%;
     text-align: center;
-    justify-self: center;
+    width:200px;
+    
+    color:#ce0c15;
 
 }
 
-
-#apex-logo {
-    width:20%;
-    height:100%;
+h1 {font-size: 25px;padding-top: 10px;
 }
+
+h2 {font-size: 18px;
+}
+
+
+
+
 
 /*styling the game description */
 #game-description {
@@ -40,4 +98,12 @@ h1,h2 {margin-left: 5%;
     height:800px;
     background:url(../assets/images/pxfuel.jpg) no-repeat center top/cover;
     
+}
+
+/*media query for small screen sizes */
+@media screen and (min-width: 425px) {
+#apex-logo {visibility: visible;
+    width:20vh;
+    height:100%;
+}
 }
