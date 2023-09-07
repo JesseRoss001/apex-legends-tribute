@@ -67,7 +67,7 @@ nav {display: flex;
 }
 
 
-#menu {
+#menu { display:none;
     
     top:-50px;}
 
@@ -110,10 +110,7 @@ nav {display: flex;
     display: inline-block;
 }
 
-li>a {
-    text-decoration: none;
-    color:#231c1c;
-}
+
 
 /*adding margin to the top of the page so that header displays clearly */
 main {padding-top:80px ;}
@@ -141,4 +138,25 @@ main {padding-top:80px ;}
     width:20vh;
     height:100%;
 }
+}
+
+
+@media screen and (min-width: 768px) {
+    /* Hide the burger icon for larger screens */
+    .dropdown-toggle {
+        display: none;
+    }
+
+    /* Show the navigation links */
+    #menu {
+        display: flex;
+        align-items: center;
+    }
+
+    /* Style for the navigation links */
+    #menu a {
+        text-decoration: none;
+        color: #ce0c15;
+        margin: 0 20px; /* Adjust spacing between items */
+    }
 }
