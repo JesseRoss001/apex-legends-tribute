@@ -24,6 +24,31 @@ header {
 #apex-logo {visibility: hidden;
 width:0;
 height:0;}
+
+/* styling the main header section */
+
+main-headings-header {
+    height:100%;
+    display:flex;
+    position:center;
+    width:80%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+h1,h2 {
+    text-align: center;
+    width:200px;
+    
+    color:#ce0c15;
+
+}
+
+h1 {font-size: 25px;padding-top: 10px;
+}
+
+h2 {font-size: 18px;
+}
+
 /* styling  the drop down  */
 nav {display: flex;
     width: 20%;
@@ -42,15 +67,26 @@ nav {display: flex;
 }
 
 
+#menu {
+    
+    top:-50px;}
+
 /* Hide the dropdown menu by default */
 .dropdown-menu {
     display: none;
+    position: absolute;
+    top: 100%; /* This moves the menu below the burger icon */
+    right:20%;
+    
 }
 
 /* Style the dropdown menu */
 .dropdown-menu li {
     padding: 10px;
-    background-color: #f2f2f2;
+    background-color: #ce0c15;
+    border:2px solid #231c1c;
+    border-radius: 10px;
+    
 }
 
 /* Style for the active item */
@@ -74,35 +110,16 @@ nav {display: flex;
     display: inline-block;
 }
 
+li>a {
+    text-decoration: none;
+    color:#231c1c;
+}
 
 /*adding margin to the top of the page so that header displays clearly */
 main {padding-top:80px ;}
 
 
 
-/* styling the header section */
-
-main-headings-header {
-    height:100%;
-    display:flex;
-    position:center;
-    width:80%;
-    margin-bottom: 10px;
-    margin-top: 10px;
-}
-h1,h2 {
-    text-align: center;
-    width:200px;
-    
-    color:#ce0c15;
-
-}
-
-h1 {font-size: 25px;padding-top: 10px;
-}
-
-h2 {font-size: 18px;
-}
 
 
 
