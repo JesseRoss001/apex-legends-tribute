@@ -18,12 +18,30 @@ header {
     display:flex;
     flex-direction: row;
     width:100%;
+    justify-content: space-evenly;
 }
 /* apex logo invisible small screen sizes */
 #apex-logo {visibility: hidden;
 width:0;
 height:0;}
 /* styling  the drop down  */
+nav {display: flex;
+    width: 20%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-bars {
+    font-size: 50px; /* Change the font size to adjust the width and height */
+    width: auto;
+    height: auto;
+    align-self: center;
+    justify-self: center;
+    color: #ce0c15;
+}
+
+
 /* Hide the dropdown menu by default */
 .dropdown-menu {
     display: none;
@@ -72,7 +90,7 @@ main-headings-header {
     margin-bottom: 10px;
     margin-top: 10px;
 }
-h1,h2 {margin-left: 5%;
+h1,h2 {
     text-align: center;
     width:200px;
     
