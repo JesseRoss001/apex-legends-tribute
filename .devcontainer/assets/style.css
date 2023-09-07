@@ -142,21 +142,69 @@ main {padding-top:80px ;}
 
 
 @media screen and (min-width: 768px) {
+    #main-headings-header{height:95%;
+        margin-left: 50px;
+        border: 2px solid  #ce0c15;
+        border-radius: 25%;
+        width:40%;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    h1,h2 {font-size: x-large;
+        text-align: center;
+    margin-left: 110px;}
+
     /* Hide the burger icon for larger screens */
+    header {display: flex;
+            justify-content: flex-start;
+    }
+    #apex-logo{
+        width:15%;
+        height:80%;
+    
+    }
+
+
     .dropdown-toggle {
         display: none;
     }
 
+    nav {display: flex;
+        left:300px;}
+
     /* Show the navigation links */
     #menu {
         display: flex;
-        align-items: center;
+        margin-left: 250px;
     }
 
     /* Style for the navigation links */
     #menu a {
         text-decoration: none;
         color: #ce0c15;
+        margin: 0 10px; /* Adjust spacing between items */
+        justify-self: right;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    /* spacing of links  for larger screens */
+    #menu a {
+        text-decoration: none;
+        color: #ce0c15;
+        font-size: larger;
+        margin: 0 15px; /* Adjust spacing between items */
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    /* spacing of links  for larger screens */
+    #menu a {
+        text-decoration: none;
+        color: #ce0c15;
+        font-size: x-large;
         margin: 0 20px; /* Adjust spacing between items */
     }
 }
