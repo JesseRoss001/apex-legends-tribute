@@ -1,8 +1,38 @@
-#header-video {
-    height:200px;
-    width:10%;
+/* adding general styles first */
+* { 
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
 }
 
+
+header {
+    background-color: #231c1c;
+    height:80px;
+    position: fixed;
+    display:flex;
+    flex-direction: row;
+    width:100%;
+}
+/*adding margin to the top of the page so that header displays clearly */
+main {padding-top:80px ;}
+
+header > a {width: 60%;}
+
+/* styling the header section */
+h1,h2 {margin-left: 5%;
+    text-align: center;
+    justify-self: center;
+
+}
+
+
+#apex-logo {
+    width:20%;
+    height:100%;
+}
+
+/*styling the game description */
 #game-description {
 
     display: flex;
