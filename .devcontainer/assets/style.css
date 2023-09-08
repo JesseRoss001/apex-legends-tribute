@@ -219,6 +219,15 @@ border-radius: 25%;
         border-radius: 10%;}
 }
 
+/*styling the table on the home page */
+th {font-size: 18px;
+}
+td{font-size: 16px;
+}
+#gibby-info {left:10px;
+bottom:60px;
+}
+
 /* adjusting footer for small screens */
 
 
@@ -270,6 +279,14 @@ border-radius: 25%;
         margin: 0 10px; /* Adjust spacing between items */
         justify-self: right;
     }
+/*styling the table on the home page */
+th {font-size: 22px;
+}
+td{font-size: 19px;
+}
+#gibby-info {left:10px;
+bottom:60px;
+}
 
 /*styling the footer */
 #gaming-logos img {height: 40px;
@@ -298,6 +315,18 @@ border-radius: 25%;
     #menu {
         display: flex;
         margin-left: 200px;
+    }
+/*styling the table on the home page */
+
+    th {font-size: 22px;
+        padding:4px 4px 4px 4px;
+    }
+    td{font-size: 19px;
+        padding:4px 4px 4px 4px;
+    }
+    
+    #gibby-info {left:30px;
+    bottom:80px;
     }
 
 
@@ -336,4 +365,18 @@ h2{font-weight: 400;}
     }
 
     #menu {margin-left:300px;}
+
+
+/*styling the table on the home page */
+
+th {font-size: 23px;
+    padding:5px 5px 5px 5px ;
+}
+td{font-size: 20px;
+    padding:5px 5px 5px 5px;
+}
+
+#gibby-info {left:50px;
+bottom:90px;
+}
 }
