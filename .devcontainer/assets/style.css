@@ -158,6 +158,25 @@ color:#ce0c15 ;
 
 border-left-color: white;
 font-size: 16px;}
+
+/*Styling the skins page */
+
+/*main section */
+#skins-background {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+    max-width: 1440px; /* Adjust this maximum width as needed */
+  }
+  
+  #skins-background img {
+    width: calc(100% / 1); /* Initially, 1 columns on large phones */
+    height: auto;
+    object-fit: cover;
+    max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+    
+  }
 /*styling the footer */
 
 footer {display: flex;
@@ -201,7 +220,9 @@ border-radius: 25%;
 
 
 
-
+/*TITLE MEDIA QUERIES */
+/* MEDIA QUERIES FOR INDEX PAGE */
+/*FOOTER MEDIA QUERIES */
 
 /*media query for small screen sizes */
 @media screen and (min-width: 425px) {
@@ -381,3 +402,33 @@ td{font-size: 20px;
 bottom:90px;
 }
 }
+
+/*MEDIA QUERIES FOR SKINS PAGE */
+/* Large Layout: 2 columns */
+@media screen and (min-width: 425px) {
+    #skins-background img {
+      width: calc(100% / 2);
+    }
+  }
+
+
+/* Tablet Layout: 3 columns */
+@media screen and (min-width: 768px) {
+    #skins-background img {
+      width: calc(100% / 3);
+    }
+  }
+  
+  /* Laptop Layout: 4 columns */
+  @media screen and (min-width: 1024px) {
+    #skins-background img {
+      width: calc(100% / 4);
+    }
+  }
+  
+  /* Large Laptop Layout: 5 columns */
+  @media screen and (min-width: 1440px) {
+    #skins-background img {
+      width: calc(100% / 5);
+    }
+  }
