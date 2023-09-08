@@ -6,6 +6,8 @@
     <title>Gibraltar-Tribute</title>
     <link rel="stylesheet" href="assets/style.css" id="">
     <link rel="icon" type="image/png" href="assets/images/450e9b50c0c93fd16f7072b35c82ee3d.jpg"/>
+
+
 </head>
 <body>
 <!-- Header [Game title and logo first ] Section include drop downs for legends , guns , maps and history -->
@@ -32,18 +34,33 @@
     </nav>
 </header>
   
+<main>
+    <div class="survey-container">
+        <h1 id="survey-header">Website Feedback Survey</h1>
+        <p>We value your feedback about the website we've created for Gibraltar. Please take a moment to answer the following questions:</p>
 
-<!-- Main -->
-<main style="height:400px;">
-<!-- Apex legends game description with an image -->
-<section id="game-description">
-    
+        <form action="#" method="post">
+            <label for="overall-satisfaction">1. Overall, how satisfied are you with the website?</label>
+            <input type="radio" name="overall-satisfaction" value="very-satisfied"> Very Satisfied
+            <input type="radio" name="overall-satisfaction" value="satisfied"> Satisfied
+            <input type="radio" name="overall-satisfaction" value="neutral"> Neutral
+            <input type="radio" name="overall-satisfaction" value="dissatisfied"> Dissatisfied
+            <input type="radio" name="overall-satisfaction" value="very-dissatisfied"> Very Dissatisfied
 
-</section>
-<!-- Game type and general info -->
-<section>
+            <label for="usability">2. How would you rate the usability of the website?</label>
+            <input type="radio" name="usability" value="excellent"> Excellent
+            <input type="radio" name="usability" value="good"> Good
+            <input type="radio" name="usability" value="fair"> Fair
+            <input type="radio" name="usability" value="poor"> Poor
+            <input type="radio" name="usability" value="very-poor"> Very Poor
 
-</section>
+            <label for="comments">3. Please share any comments or suggestions for improvement:</label>
+            <textarea name="comments" id="comments" placeholder="Your comments here..."></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
 
 </main>
 <!--footer links to what consoles played on with copyright-->

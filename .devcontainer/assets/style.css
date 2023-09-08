@@ -221,7 +221,12 @@ text-decoration:wavy}
 
 
 
-
+/*STYLING THE SURVEY PAGE */
+#survey-container {display: flex;
+}
+#survey-header {min-width:100% ;
+max-height: 50px;
+font-size: 20px;}
 
 
 /*styling the footer */
