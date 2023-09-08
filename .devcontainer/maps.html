@@ -37,27 +37,35 @@
 <main>
     <div class="survey-container">
         <h1 id="survey-header">Website Feedback Survey</h1>
-        <p>We value your feedback about the website we've created for Gibraltar. Please take a moment to answer the following questions:</p>
+        <p class="smallerfont" id="form-intro">We value your feedback about the website we've created for Gibraltar. Please take a moment to answer the following questions:</p>
+<br>
+        <form action="#" method="post" id="survey-form">
+            <label for="overall-satisfaction" class="smallerfont" >1. Overall, how satisfied are you with the website?</label>
+            <br>
+            <input  type="radio" name="overall-satisfaction" value="very-satisfied"> <p class="smallerfont">Excellent </p> 
+            <input   type="radio" name="overall-satisfaction" value="satisfied"> <p class="smallerfont">Good </p> 
+            <input  type="radio" name="overall-satisfaction" value="neutral"> <p class="smallerfont">Fair </p> 
+            <input   type="radio" name="overall-satisfaction" value="dissatisfied"> <p class="smallerfont"> Poor </p> 
+            <input  type="radio" name="overall-satisfaction" value="very-dissatisfied"> <p class="smallerfont">Very Poor </p> 
+        <br>
+        <br>
 
-        <form action="#" method="post">
-            <label for="overall-satisfaction">1. Overall, how satisfied are you with the website?</label>
-            <input type="radio" name="overall-satisfaction" value="very-satisfied"> Very Satisfied
-            <input type="radio" name="overall-satisfaction" value="satisfied"> Satisfied
-            <input type="radio" name="overall-satisfaction" value="neutral"> Neutral
-            <input type="radio" name="overall-satisfaction" value="dissatisfied"> Dissatisfied
-            <input type="radio" name="overall-satisfaction" value="very-dissatisfied"> Very Dissatisfied
+            <label for="usability" class="smallerfont" >2. How would you rate the usability of the website?</label>
+            <br>
+            <input  type="radio" name="usability" value="excellent"> <p class="smallerfont">Excellent </p> 
+            <input   type="radio" name="usability" value="good"> <p class="smallerfont">Good </p> 
+            <input   type="radio" name="usability" value="fair"> <p class="smallerfont">Fair </p> 
+            <input   type="radio" name="usability" value="poor"> <p class="smallerfont">Poor </p> 
+            <input   type="radio" name="usability" value="very-poor"> <p class="smallerfont">Very Poor </p> 
 
-            <label for="usability">2. How would you rate the usability of the website?</label>
-            <input type="radio" name="usability" value="excellent"> Excellent
-            <input type="radio" name="usability" value="good"> Good
-            <input type="radio" name="usability" value="fair"> Fair
-            <input type="radio" name="usability" value="poor"> Poor
-            <input type="radio" name="usability" value="very-poor"> Very Poor
+        <br> 
+        <br>
 
-            <label for="comments">3. Please share any comments or suggestions for improvement:</label>
-            <textarea name="comments" id="comments" placeholder="Your comments here..."></textarea>
-
-            <button type="submit">Submit</button>
+            <label class="smallerfont" for="comments">3. Please share any comments or suggestions for improvement:</label>
+            <textarea class="smallerfont" name="comments" id="comments" placeholder="Your comments here..."></textarea>
+<br>
+<br>
+            <button type="submit">Submit your feedback </button>
         </form>
     </div>
 </body>

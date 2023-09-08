@@ -223,12 +223,22 @@ text-decoration:wavy}
 
 /*STYLING THE SURVEY PAGE */
 #survey-container {display: flex;
+    margin:5px;
+    width:90%;
+    align-items: center;
+    justify-content: center;
 }
 #survey-header {min-width:100% ;
 max-height: 50px;
-font-size: 20px;}
+font-size: 20px;
+margin-bottom: 13px;}
 
+#form-intro {margin-left: 15px;
+margin-right: 15px;
+font-size: 12px;}
+.smallerfont {font-size: 10px;display:inline-block;text-align: left;}
 
+#survey-form {margin-left:15px;}
 /*styling the footer */
 
 footer {display: flex;
