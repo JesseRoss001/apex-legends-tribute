@@ -175,6 +175,10 @@ font-size: 16px;}
     height: auto;
     object-fit: cover;
     max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+    max-width:250px;
+    padding-top: 10px;
+    padding-left: 10px;
+    
     
   }
 /*styling the footer */
