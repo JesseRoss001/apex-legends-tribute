@@ -19,6 +19,7 @@ header {
     flex-direction: row;
     width:100%;
     justify-content: space-evenly;
+    box-shadow: 0 -6px 10px 5px rgba(247, 230, 230, 0.5);
 }
 /* apex logo invisible small screen sizes */
 #apex-logo {visibility: hidden;
@@ -142,7 +143,15 @@ height:80px;
 width:100%;
 background-color: #231c1c;
 bottom: 0;
-border-top:3px solid #ce0c15
+
+
+}
+#designer,#copyright {font-size: 14px;
+background-color: #ce0c15;
+opacity: 0.4;
+color: black;
+padding: 1%;
+border-radius: 25%;
 
 }
 
@@ -150,16 +159,21 @@ border-top:3px solid #ce0c15
 #gaming-logos {display:flex ;
     flex-direction: row;
     justify-content: space-evenly;
-    width:50%;
+    width:40%;
     height:80px;
-    height:200px;
-    align-items: center;}
+    align-items: center;
+    }
 
-#gaming-logos img {height: 50px;
-width:50px;
-border:2px solid #ce0c15;
-border-width: 2px;
-border-radius: 25px;}
+/*adding gaming logos here */
+#gaming-logos img {height: 20px;
+    width: 20px;
+    border:1px solid #ce0c15;
+    border-radius: 10px;}
+
+    #designer,#copyright {font-size: 12px;
+    border-radius: 10%;}
+
+
 
 
 
@@ -169,7 +183,20 @@ border-radius: 25px;}
     width:20vh;
     height:100%;
 }
+
+
+
+#gaming-logos img {height: 30px;
+    width: 30px;
+    border-radius: 15px;}
+
+    #designer,#copyright {font-size: 15px;
+        border-radius: 10%;}
 }
+
+/* adjusting footer for small screens */
+
+
 
 
 @media screen and (min-width: 768px) {
@@ -218,6 +245,14 @@ border-radius: 25px;}
         margin: 0 10px; /* Adjust spacing between items */
         justify-self: right;
     }
+
+/*styling the footer */
+#gaming-logos img {height: 40px;
+    width: 40px;
+    border-radius: 20px;}
+
+#designer,#copyright {font-size: 18px;
+        border-radius: 10%;}
 }
 
 @media screen and (min-width: 1024px) {
@@ -239,8 +274,16 @@ border-radius: 25px;}
         display: flex;
         margin-left: 200px;
     }
-}
 
+
+/*styling the footer */
+#gaming-logos img {height: 50px;
+    width: 50px;
+    border-radius: 25px;}
+
+#designer,#copyright {font-size: 18px;
+        border-radius: 10%;}
+}
 @media screen and (min-width: 1440px) {
     /* spacing of links  for larger screens */
     #main-headings-header {display: flex;
