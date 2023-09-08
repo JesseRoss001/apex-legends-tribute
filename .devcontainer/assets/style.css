@@ -128,13 +128,35 @@ main {padding-top:80px ;}
 
 /*styling the game description */
 #game-description {
-
+    position: fixed;
     display: flex;
     width:100%;
-    height:1600px;
+    height:800px;
     background:url(../assets/images/pxfuel.jpg) no-repeat center top/cover;
     
 }
+
+/* Adding a table to the main section of index.html */
+#gibby-info {display:flex ;
+    height: fit-content;
+    width: fit-content;
+    font-size: 14px;
+    text-align: center;
+    justify-self: flex-end;
+    position: relative;
+    margin-top:460px ;
+}
+
+td,tr,th {border:2px solid black;
+padding:1px;}
+
+td{background-color:#ce0c15;
+    border-left-color: white;}
+th {background-color: #231c1c;
+color:#ce0c15 ;
+
+border-left-color: white;
+font-size: 16px;}
 /*styling the footer */
 
 footer {display: flex;
