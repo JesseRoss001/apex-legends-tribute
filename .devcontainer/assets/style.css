@@ -145,6 +145,7 @@ main {padding-top:80px ;}
     justify-self: flex-end;
     position: relative;
     margin-top:460px ;
+    opacity: 0.8;
 }
 
 td,tr,th {border:2px solid black;
@@ -173,7 +174,7 @@ bottom: 0;
 }
 #designer,#copyright {font-size: 14px;
 background-color: #ce0c15;
-opacity: 0.4;
+opacity: 0.9;
 color: black;
 padding: 1%;
 border-radius: 25%;
