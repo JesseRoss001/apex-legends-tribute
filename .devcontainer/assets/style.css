@@ -133,7 +133,7 @@ padding-bottom: 100px;}
     position: fixed;
     display: flex;
     width:100%;
-    height:800px;
+    min-height: 100%;
     background:url(../assets/images/pxfuel.jpg) no-repeat center top/cover;
     
 }
@@ -147,7 +147,7 @@ padding-bottom: 100px;}
     justify-self: flex-end;
     position: relative;
     margin-top:460px ;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 td,tr,th {border:2px solid black;
@@ -189,6 +189,41 @@ font-size: 16px;}
 
     
   }
+
+
+/* STYLING THE LORE PAGE */
+
+/*main */
+#lore-main{padding-top:200px;
+    background-color:#292b2c;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction:row ;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100%;
+}
+
+#lore-main h1 {display:inline-block; width:100%;margin-bottom: 20px;text-align: center;
+font-size: x-large; font-style: oblique;
+text-decoration:wavy}
+
+.message-container {margin-top:70px;
+    margin-bottom: 80px;
+    background-color: #292b2c;
+    color: #ffffff;
+    min-width: 100%;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+
 /*styling the footer */
 
 footer {display: flex;
@@ -444,3 +479,5 @@ bottom:90px;
       width: calc(100% / 5);
     }
   }
+
+
