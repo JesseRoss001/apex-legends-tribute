@@ -68,9 +68,12 @@ nav {display: flex;
 }
 
 
-#menu { display:none;
-    
+#menu {
+    display:none;
     top:-50px;}
+li > a {
+    text-decoration: none;
+    color:black;}
 
 /* Hide the dropdown menu by default */
 .dropdown-menu {
