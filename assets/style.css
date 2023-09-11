@@ -1,0 +1,552 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+
+/* adding general styles first */
+* { 
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+header {
+    background-color: #231c1c;
+    height:80px;
+    position: fixed;
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    justify-content: space-evenly;
+    z-index: 100;
+    box-shadow: 0 -6px 10px 5px rgba(247, 230, 230, 0.5);
+}
+/* apex logo invisible small screen sizes */
+#apex-logo {visibility: hidden;
+width:0;
+height:0;}
+
+/* styling the main header section */
+
+main-headings-header {
+    height:100%;
+    display:flex;
+    position:center;
+    width:80%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+h1,h2 {
+    text-align: center;
+    width:200px;
+    
+    color:#ce0c15;
+
+}
+
+h1 {font-size: 25px;padding-top: 10px;
+}
+
+h2 {font-size: 18px;
+}
+
+/* styling  the drop down  */
+nav {display: flex;
+    width: 20%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-bars {
+    font-size: 50px; /* Change the font size to adjust the width and height */
+    width: auto;
+    height: auto;
+    align-self: center;
+    justify-self: center;
+    color: #ce0c15;
+}
+
+
+#menu {
+    display:none;
+    top:-50px;}
+li > a {
+    text-decoration: none;
+    color:black;}
+
+/* Hide the dropdown menu by default */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%; /* This moves the menu below the burger icon */
+    right:20%;
+    
+}
+
+/* Style the dropdown menu */
+.dropdown-menu li {
+    padding: 10px;
+    background-color: #ce0c15;
+    border:2px solid #231c1c;
+    border-radius: 10px;
+    
+}
+
+/* Style for the active item */
+.active {
+    font-weight: bold;
+}
+
+/* Style for the dropdown toggle */
+.dropdown-toggle:hover + .dropdown-menu {
+    display: block;
+}
+
+/* Style for the dropdown toggle link */
+.dropdown-toggle {
+    cursor: pointer;
+}
+
+/* Style for the dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+
+/*adding margin to the top of the page so that header displays clearly */
+main {padding-top:80px ;
+padding-bottom: 100px;
+min-height: 100%;}
+
+
+
+
+
+
+
+
+/*styling the game description */
+#game-description {
+    position: fixed;
+    display: flex;
+    width:100%;
+    min-height: 100%;
+    background:url(../assets/images/pxfuel.jpg) no-repeat center top/cover;
+    
+}
+
+/* Adding a table to the main section of index.html */
+#gibby-info {display:flex ;
+    height: fit-content;
+    width: fit-content;
+    font-size: 14px;
+    text-align: center;
+    justify-self: flex-end;
+    position: relative;
+    margin-top:320px ;
+    opacity: 0.9;
+}
+
+td,tr,th {border:2px solid black;
+padding:1px;}
+
+td{background-color:#ce0c15;
+    border-left-color: white;}
+th {background-color: #231c1c;
+color:#ce0c15 ;
+
+border-left-color: white;
+font-size: 16px;}
+
+/*Styling the skins page */
+
+/*main section */
+#skins-background {max-height: fit-content;
+    background:url(../assets/images/Black-And-Red-Background-Free-Download.jpg) no-repeat center center/cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+    max-width: 100%;
+    padding-bottom: 100px; /* Adjust this maximum width as needed */
+  }
+  
+  #skins-background img {
+    width: calc(100% / 1); /* Initially, 1 columns on large phones */
+    height: auto;
+    object-fit: cover;
+    max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+    max-width:250px;
+    padding-top: 10px;
+    padding-left: 10px;
+    opacity: 0.9;
+    border-radius: 10%;
+    background:2px solid #ce0c15;
+    
+
+    
+  }
+
+
+/* STYLING THE LORE PAGE */
+
+/*main */
+#lore-main{padding-top:200px;
+    background-color:#292b2c;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction:row ;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100%;
+}
+
+#lore-main h1 {display:inline-block; width:100%;margin-bottom: 20px;text-align: center;
+font-size: x-large; font-style: oblique;
+text-decoration:wavy}
+
+.message-container {margin-top:70px;
+    margin-bottom: 80px;
+    background-color: #292b2c;
+    color: #ffffff;
+    min-width: 100%;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/*STYLING THE SURVEY PAGE */
+#survey-container {display: flex;
+    margin:5px;
+    width:90%;
+    align-items: center;
+    justify-content: center;
+}
+#survey-header {min-width:100% ;
+max-height: 50px;
+font-size: 20px;
+margin-bottom: 13px;}
+
+#form-intro {margin-left: 15px;
+margin-right: 15px;
+font-size: 12px;}
+.smallerfont {font-size: 10px;display:inline-block;text-align: left;}
+
+#survey-form {margin-left:15px;}
+/*styling the footer */
+
+footer {display: flex;
+position: fixed;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+height:80px;
+width:100%;
+background-color: #231c1c;
+bottom: 0;
+
+
+}
+#designer,#copyright {font-size: 14px;
+background-color: #ce0c15;
+opacity: 0.9;
+color: black;
+padding: 1%;
+border-radius: 25%;
+
+}
+
+
+#gaming-logos {display:flex ;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width:40%;
+    height:80px;
+    align-items: center;
+    }
+
+/*adding gaming logos here */
+#gaming-logos img {height: 20px;
+    width: 20px;
+    border:1px solid #ce0c15;
+    border-radius: 10px;}
+
+    #designer,#copyright {font-size: 12px;
+    border-radius: 10%;}
+
+    #submit-button {height:30px;
+        background-color:#ce0c15;
+        border-radius: 15px;
+        padding-left: 8px;
+        padding-right: 8px;
+    font-size: 12px;}
+
+/*TITLE MEDIA QUERIES */
+/* MEDIA QUERIES FOR INDEX PAGE */
+/*FOOTER MEDIA QUERIES */
+
+/*media query for small screen sizes */
+@media screen and (min-width: 425px) {
+#apex-logo {visibility: visible;
+    width:20vh;
+    height:100%;
+}
+
+
+
+#gaming-logos img {height: 30px;
+    width: 30px;
+    border-radius: 15px;}
+
+    #designer,#copyright {font-size: 15px;
+        border-radius: 10%;}
+
+
+/*styling the table on the home page */
+th {font-size: 18px;
+}
+td{font-size: 16px;
+}
+#gibby-info {left:10px;
+bottom:60px;
+}
+
+.smallerfont{font-size: 12px;}
+}
+/* adjusting footer for small screens */
+
+
+
+
+@media screen and (min-width: 768px) {
+    #main-headings-header{height:95%;
+        margin-left: 30px;
+        border: 2px solid  #ce0c15;
+        border-radius: 25%;
+        width:40%;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    h1,h2 {font-size: x-large;
+        text-align: center;
+    margin-left: 60px;}
+
+    /* Hide the burger icon for larger screens */
+    header {display: flex;
+            justify-content: flex-start;
+    }
+    #apex-logo{
+        width:15%;
+        height:80%;
+    
+    }
+
+
+    .dropdown-toggle {
+        display: none;
+    }
+
+    nav {display: flex;
+        left:220px;}
+
+    /* Show the navigation links */
+    #menu {
+        display: flex;
+        margin-left: 150px;
+    }
+
+    /* Style for the navigation links */
+    #menu a {
+        text-decoration: none;
+        color: #ce0c15;
+        margin: 0 10px; /* Adjust spacing between items */
+        justify-self: right;
+    }
+/*styling the table on the home page */
+th {font-size: 22px;
+}
+td{font-size: 19px;
+}
+#gibby-info {left:10px;
+bottom:60px;
+}
+
+/*styling the footer */
+#gaming-logos img {height: 40px;
+    width: 40px;
+    border-radius: 20px;}
+
+#designer,#copyright {font-size: 18px;
+        border-radius: 10%;}
+.smallerfont{font-size: 14px;}
+
+#survey-header {text-align: left;}
+#form-intro {font-size: 14px;
+margin-bottom: 8px;}
+
+
+#submit-button {font-size: 15px;}
+}
+
+@media screen and (min-width: 1024px) {
+    /* spacing of links  for larger screens */
+    h1,h2 {font-size: x-large;
+        text-align: center;
+    margin-left: 110px;}
+
+    h2 {font-weight: 400;}
+
+    #menu a {
+        text-decoration: none;
+        color: #ce0c15;
+        font-size: larger;
+        margin: 0 15px; /* Adjust spacing between items */
+    }
+    
+    #menu {
+        display: flex;
+        margin-left: 200px;
+    }
+/*styling the table on the home page */
+
+    th {font-size: 22px;
+        padding:4px 4px 4px 4px;
+    }
+    td{font-size: 19px;
+        padding:4px 4px 4px 4px;
+    }
+    
+    #gibby-info {left:30px;
+    bottom:80px;
+    }
+
+
+/*styling the footer */
+#gaming-logos img {height: 50px;
+    width: 50px;
+    border-radius: 25px;}
+
+#designer,#copyright {font-size: 18px;
+        border-radius: 10%;}
+.smallerfont{font-size: 16px;}
+
+        #survey-header {text-align: left;}
+        #form-intro {font-size: 18px;
+        margin-bottom: 8px;}
+
+#submit-button {height:40px;
+background-color:#ce0c15;
+border-radius: 20px;
+padding-left: 8px;
+padding-right: 8px;
+font-size: 15px;}
+}
+@media screen and (min-width: 1440px) {
+    /* spacing of links  for larger screens */
+    #main-headings-header {display: flex;
+    flex-direction: row;
+align-items: center;
+justify-content:center ;}
+    h1,h2 {font-size: x-large;
+        text-align: center;
+        margin:0;
+        padding:0;
+    
+    display: inline-block;
+}
+
+h1{font-size: xx-large;}
+h2{font-weight: 400;}
+
+ 
+
+    #menu a {
+        text-decoration: none;
+        color: #ce0c15;
+        font-size: x-large;
+        margin: 0 25px; /* Adjust spacing between items */
+    }
+
+    #menu {margin-left:300px;}
+
+
+/*styling the table on the home page */
+
+th {font-size: 23px;
+    padding:5px 5px 5px 5px ;
+}
+td{font-size: 20px;
+    padding:5px 5px 5px 5px;
+}
+
+#gibby-info {left:50px;
+bottom:90px;
+}
+}
+
+/*MEDIA QUERIES FOR SKINS PAGE */
+/* Large Layout: 2 columns */
+@media screen and (min-width: 425px) {
+    #skins-background img {
+      width: calc(100% / 2);
+    }
+    #submit-button {height:35px;
+        background-color:#ce0c15;
+        border-radius: 17.5px;
+        padding-left: 8px;
+        padding-right: 8px;}
+  }
+
+
+/* Tablet Layout: 3 columns */
+@media screen and (min-width: 768px) {
+    #skins-background img {
+      width: calc(100% / 3);
+    }
+    #submit-button {height:40px;
+        background-color:#ce0c15;
+        border-radius: 20px;
+        padding-left: 8px;
+        padding-right: 8px;}
+        }
+    
+  
+  
+  /* Laptop Layout: 4 columns */
+  @media screen and (min-width: 1024px) {
+    #skins-background img {
+      width: calc(100% / 4);
+    }
+    #submit-button {height:50px;
+        background-color:#ce0c15;
+        border-radius: 25px;
+        padding-left: 8px;
+        padding-right: 8px;}
+        
+    
+  }
+  
+  /* Large Laptop Layout: 5 columns */
+  @media screen and (min-width: 1440px) {
+    #skins-background img {
+      width: calc(100% / 5);
+    }
+    #submit-button {height:50px;
+        background-color:#ce0c15;
+        border-radius: 25px;
+        padding-left: 8px;
+        padding-right: 8px;}
+        
+     
+  }
+
+

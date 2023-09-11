@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gibraltar-Tribute</title>
+    <link rel="stylesheet" href="assets/style.css" id="">
+    <link rel="icon" type="image/png" href="assets/images/450e9b50c0c93fd16f7072b35c82ee3d.jpg"/>
+
+
+</head>
+<body>
+<!-- Header [Game title and logo first ] Section include drop downs for legends , guns , maps and history -->
+<header>
+    <img src="assets/images/neeraj-parchand-apex-legends-symbol-red.jpg" alt="Apex Legends Logo" id="apex-logo" >
+    <div id="main-headings-header">
+        <h1 >  Gibraltar </h1> 
+        <h2> Tribute Page  </h2>
+    </div>
+    <nav>
+        <div id="menu">
+            <a href="index.html" >Home</a>
+            <a href="legends.html"  >Skins</a>
+            <a href="guns.html">Lore</a>
+            <a href="maps.html" class="active" >Survey</a>
+        </div>
+        <a href="#" class="dropdown-toggle" id="toggleDropdown"><i class="fa-solid fa-bars custom-bars"></i></a>
+        <ul class="dropdown-menu" id="dropdownMenu">
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="legends.html">Skins</a></li>
+            <li><a href="guns.html"  >Lore</a></li>
+            <li><a href="maps.html" class="active" >Survey</a></li>
+        </ul>
+    </nav>
+</header>
+  
+<main>
+    <div class="survey-container">
+        <h1 id="survey-header">Website Feedback Survey</h1>
+        <p class="smallerfont" id="form-intro">We value your feedback about the website we've created for Gibraltar. Please take a moment to answer the following questions:</p>
+<br>
+        <form action="#" method="post" id="survey-form">
+            <label for="overall-satisfaction" class="smallerfont" >1. Overall, how satisfied are you with the website?</label>
+            <br>
+            <input  type="radio" name="overall-satisfaction" value="very-satisfied"> <p class="smallerfont">Excellent </p> 
+            <input   type="radio" name="overall-satisfaction" value="satisfied"> <p class="smallerfont">Good </p> 
+            <input  type="radio" name="overall-satisfaction" value="neutral"> <p class="smallerfont">Fair </p> 
+            <input   type="radio" name="overall-satisfaction" value="dissatisfied"> <p class="smallerfont"> Poor </p> 
+            <input  type="radio" name="overall-satisfaction" value="very-dissatisfied"> <p class="smallerfont">Very Poor </p> 
+        <br>
+        <br>
+
+            <label for="usability" class="smallerfont" >2. How would you rate the usability of the website?</label>
+            <br>
+            <input  type="radio" name="usability" value="excellent"> <p class="smallerfont">Excellent </p> 
+            <input   type="radio" name="usability" value="good"> <p class="smallerfont">Good </p> 
+            <input   type="radio" name="usability" value="fair"> <p class="smallerfont">Fair </p> 
+            <input   type="radio" name="usability" value="poor"> <p class="smallerfont">Poor </p> 
+            <input   type="radio" name="usability" value="very-poor"> <p class="smallerfont">Very Poor </p> 
+
+        <br> 
+        <br>
+
+            <label class="smallerfont" for="comments">3. Please share any comments or suggestions for improvement:</label>
+            <br>
+            <br>
+            <textarea class="smallerfont" name="comments" id="comments" placeholder="Your comments here..."></textarea>
+<br>
+<br>
+            <button type="submit" id="submit-button">Submit your feedback </button>
+        </form>
+    </div>
+</body>
+
+</main>
+<!--footer links to what consoles played on with copyright-->
+<footer >
+<div id="designer">
+     <p> Jesse Ross </p>
+</div>
+
+
+
+<div id="gaming-logos">
+<a href="https://www.xbox.com/en-GB/" id="x-box" target="_blank">
+<img src="assets/gaming-logos/Xbox_one_logo.svg.png" alt="xbox logo link " id="xbox">
+</a>
+<a href="https://www.playstation.com/en-gb/ps4/" id="play-station" target="_blank">
+    <img src="assets/gaming-logos/s-l1600.jpg" alt="playstation logo link" id="">
+</a>
+<a href="https://store.steampowered.com/" id="steam" target="_blank">
+    <img src="assets/gaming-logos/Steam_icon_logo.svg.png" alt="steam logo link" id="">
+</a>
+<a href="https://www.ea.com/en-gb/games/apex-legends/news/apex-legends-mobile-lrl" id="mobile" target="_blank" >
+    <img src="assets/gaming-logos/101286713-mobile-game-logo-icon-design.jpg" alt="mobile logo link" id="">
+</a>
+
+</div>
+
+<div id="copyright">
+    <p> &copy;  Apex-Legends  </p>
+</div>
+
+
+</footer>
+<script src="https://kit.fontawesome.com/11665d5c0d.js" crossorigin="anonymous"></script> 
+<script> // JavaScript to toggle dropdown menu for small screens
+    const toggleDropdown = document.getElementById('toggleDropdown');
+    const dropdownMenu = document.getElementById('dropdownMenu');
+    
+    toggleDropdown.addEventListener('click', () => {
+        dropdownMenu.style.display = (dropdownMenu.style.display === 'block') ? 'none' : 'block';
+    });</script>   
+</body>
+</html>
