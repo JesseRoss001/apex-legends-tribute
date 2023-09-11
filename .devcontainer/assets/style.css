@@ -281,7 +281,12 @@ border-radius: 25%;
     #designer,#copyright {font-size: 12px;
     border-radius: 10%;}
 
-
+    #submit-button {height:30px;
+        background-color:#ce0c15;
+        border-radius: 15px;
+        padding-left: 8px;
+        padding-right: 8px;
+    font-size: 12px;}
 
 /*TITLE MEDIA QUERIES */
 /* MEDIA QUERIES FOR INDEX PAGE */
@@ -302,7 +307,7 @@ border-radius: 25%;
 
     #designer,#copyright {font-size: 15px;
         border-radius: 10%;}
-}
+
 
 /*styling the table on the home page */
 th {font-size: 18px;
@@ -313,6 +318,8 @@ td{font-size: 16px;
 bottom:60px;
 }
 
+.smallerfont{font-size: 12px;}
+}
 /* adjusting footer for small screens */
 
 
@@ -380,6 +387,14 @@ bottom:60px;
 
 #designer,#copyright {font-size: 18px;
         border-radius: 10%;}
+.smallerfont{font-size: 14px;}
+
+#survey-header {text-align: left;}
+#form-intro {font-size: 14px;
+margin-bottom: 8px;}
+
+
+#submit-button {font-size: 15px;}
 }
 
 @media screen and (min-width: 1024px) {
@@ -422,6 +437,18 @@ bottom:60px;
 
 #designer,#copyright {font-size: 18px;
         border-radius: 10%;}
+.smallerfont{font-size: 16px;}
+
+        #survey-header {text-align: left;}
+        #form-intro {font-size: 18px;
+        margin-bottom: 8px;}
+
+#submit-button {height:40px;
+background-color:#ce0c15;
+border-radius: 20px;
+padding-left: 8px;
+padding-right: 8px;
+font-size: 15px;}
 }
 @media screen and (min-width: 1440px) {
     /* spacing of links  for larger screens */
@@ -472,6 +499,11 @@ bottom:90px;
     #skins-background img {
       width: calc(100% / 2);
     }
+    #submit-button {height:35px;
+        background-color:#ce0c15;
+        border-radius: 17.5px;
+        padding-left: 8px;
+        padding-right: 8px;}
   }
 
 
@@ -480,13 +512,27 @@ bottom:90px;
     #skins-background img {
       width: calc(100% / 3);
     }
-  }
+    #submit-button {height:40px;
+        background-color:#ce0c15;
+        border-radius: 20px;
+        padding-left: 8px;
+        padding-right: 8px;}
+        }
+    
+  
   
   /* Laptop Layout: 4 columns */
   @media screen and (min-width: 1024px) {
     #skins-background img {
       width: calc(100% / 4);
     }
+    #submit-button {height:50px;
+        background-color:#ce0c15;
+        border-radius: 25px;
+        padding-left: 8px;
+        padding-right: 8px;}
+        
+    
   }
   
   /* Large Laptop Layout: 5 columns */
@@ -494,6 +540,13 @@ bottom:90px;
     #skins-background img {
       width: calc(100% / 5);
     }
+    #submit-button {height:50px;
+        background-color:#ce0c15;
+        border-radius: 25px;
+        padding-left: 8px;
+        padding-right: 8px;}
+        
+     
   }
 
 
